@@ -1,0 +1,24 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/office/Desktop/Sobel_Accelerator/Sobel.cpp' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/office/Desktop/Sobel_Accelerator/Sobel.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=sobel' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(9)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=1.25ns' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(10)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=xo' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.881 seconds; current allocated memory: 162.254 MB.
+INFO: [HLS 200-10] Analyzing design file '../Sobel.cpp' ... 
+ERROR: [HLS 207-2974] no member named 'abs' in namespace 'hls'; did you mean simply 'abs'? (../Sobel.cpp:48:27)
+INFO: [HLS 207-4436] 'abs' declared here (C:/Xilinx/Vitis/2024.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\stdlib.h:54:12)
+ERROR: [HLS 207-2974] no member named 'abs' in namespace 'hls'; did you mean simply 'abs'? (../Sobel.cpp:48:42)
+ERROR:  
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.965 seconds; peak allocated memory: 164.266 MB.

@@ -1,0 +1,28 @@
+<pragmas>
+<pragma file="../Sobel.cpp" line="23" pragmaType="pipeline" parentfunction="sobel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../Sobel.cpp" line="11" pragmaType="interface" parentfunction="sobel" mode="axis" port="in_stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="../Sobel.cpp" line="12" pragmaType="interface" parentfunction="sobel" mode="axis" port="out_stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="../Sobel.cpp" line="13" pragmaType="interface" parentfunction="sobel" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="../Sobel.cpp" line="19" pragmaType="array_partition" parentfunction="sobel" dim="1" factor="0" mode="complete" dynamic="0" variable="line_buffer"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_last_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_strb_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_id_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_dest_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint(bool)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_data_ptr" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_keep_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(bool)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(int)" off="0" region="0" recursive="0"/>
+</pragmas>

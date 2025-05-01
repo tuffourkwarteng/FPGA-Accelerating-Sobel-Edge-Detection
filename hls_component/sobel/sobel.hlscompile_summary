@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\sobel\\sobel.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "05/01/25 02:10:42",
+ "timestampMillis": "1746058242509",
+ "buildStep": {
+  "cmdId": "99da7aea-e9cc-4408-af8a-f24eea6f1954",
+  "name": "v++",
+  "logFile": "C:/Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\sobel\\logs\\sobel.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\hls_config.cfg --work_dir sobel ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "sobel"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\hls_config.cfg",
+    "content": "part=xc7z020clg400-1\n\n[hls]\nflow_target=vivado\npackage.output.format=xo\npackage.output.syn=false\nsyn.top=sobel\nsyn.file=C:/Users/office/Desktop/Sobel_Accelerator/Sobel.cpp\nclock=10ns\nclock_uncertainty=1.25ns"
+   }
+  ],
+  "cwd": "C:\\Users\\office\\Desktop\\Sobel_Accelerator\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "05/01/25 02:10:42",
+ "timestampMillis": "1746058242510",
+ "status": {
+  "cmdId": "99da7aea-e9cc-4408-af8a-f24eea6f1954",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "05/01/25 02:10:49",
+ "timestampMillis": "1746058249239",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sobel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\office\\Desktop\\Sobel_Accelerator\\Sobel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "05/01/25 02:10:49",
+ "timestampMillis": "1746058249241",
+ "buildStep": {
+  "cmdId": "03324aa3-997c-4163-b991-d8a156c82ffd",
+  "name": "",
+  "logFile": "C:/Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\sobel\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\office\\Desktop\\Sobel_Accelerator\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "05/01/25 02:10:49",
+ "timestampMillis": "1746058249241",
+ "status": {
+  "cmdId": "03324aa3-997c-4163-b991-d8a156c82ffd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "05/01/25 02:10:49",
+ "timestampMillis": "1746058249242",
+ "report": {
+  "path": "C:/Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\sobel\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "05/01/25 02:10:49",
+ "timestampMillis": "1746058249243",
+ "report": {
+  "path": "C:/Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\sobel\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "05/01/25 02:10:49",
+ "timestampMillis": "1746058249244",
+ "report": {
+  "path": "C:/Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\sobel\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "05/01/25 02:11:15",
+ "timestampMillis": "1746058275075",
+ "report": {
+  "path": "C:/Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\sobel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "05/01/25 02:11:15",
+ "timestampMillis": "1746058275076",
+ "report": {
+  "path": "C:/Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\sobel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "05/01/25 02:11:15",
+ "timestampMillis": "1746058275077",
+ "report": {
+  "path": "C:/Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\sobel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "05/01/25 02:11:15",
+ "timestampMillis": "1746058275078",
+ "status": {
+  "cmdId": "03324aa3-997c-4163-b991-d8a156c82ffd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "05/01/25 02:11:15",
+ "timestampMillis": "1746058275297",
+ "status": {
+  "cmdId": "99da7aea-e9cc-4408-af8a-f24eea6f1954",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "05/01/25 02:11:15",
+ "timestampMillis": "1746058275330",
+ "report": {
+  "path": "C:/Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\sobel\\reports\\v++_compile_sobel_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "05/01/25 02:11:15",
+ "timestampMillis": "1746058275331",
+ "report": {
+  "path": "C:/Users\\office\\Desktop\\Sobel_Accelerator\\hls_component\\sobel\\reports\\.db\\v++_compile_sobel_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

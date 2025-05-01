@@ -1,0 +1,470 @@
+
+*** Running vivado
+    with args -log Sobel_design_sobel_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Sobel_design_sobel_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu May  1 21:57:50 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Sobel_design_sobel_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 400.688 ; gain = 99.414
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/office/Desktop/Sobel_Accelerator/Sobel_Edge_detection/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Sobel_design_sobel_0_0
+Command: synth_design -top Sobel_design_sobel_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 86324
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1113.410 ; gain = 469.785
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Sobel_design_sobel_0_0' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_sobel_0_0/synth/Sobel_design_sobel_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'sobel' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_line_buffer_RAM_1WNR_AUTO_1R1W' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_line_buffer_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_line_buffer_RAM_1WNR_AUTO_1R1W' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_line_buffer_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sobel_line_buffer_1_RAM_1WNR_AUTO_1R1W' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_line_buffer_1_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_line_buffer_1_RAM_1WNR_AUTO_1R1W' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_line_buffer_1_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sobel_line_buffer_3_RAM_AUTO_1R1W' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_line_buffer_3_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_line_buffer_3_RAM_AUTO_1R1W' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_line_buffer_3_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sobel_urem_9ns_3ns_2_13_1' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:68]
+INFO: [Synth 8-6157] synthesizing module 'sobel_urem_9ns_3ns_2_13_1_divider' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_urem_9ns_3ns_2_13_1_divider' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_urem_9ns_3ns_2_13_1' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:68]
+INFO: [Synth 8-6157] synthesizing module 'sobel_mul_9ns_11ns_19_1_1' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_mul_9ns_11ns_19_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_mul_9ns_11ns_19_1_1' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_mul_9ns_11ns_19_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sobel_mul_8ns_10ns_17_1_1' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_mul_8ns_10ns_17_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_mul_8ns_10ns_17_1_1' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_mul_8ns_10ns_17_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sobel_sparsemux_7_2_8_1_1' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_sparsemux_7_2_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_sparsemux_7_2_8_1_1' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_sparsemux_7_2_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_sparsemux_7_2_8_1_1__parameterized0' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_sparsemux_7_2_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_sparsemux_7_2_8_1_1__parameterized0' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_sparsemux_7_2_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_sparsemux_7_2_8_1_1__parameterized1' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_sparsemux_7_2_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_sparsemux_7_2_8_1_1__parameterized1' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_sparsemux_7_2_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_flow_control_loop_pipe_no_ap_cont' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_flow_control_loop_pipe_no_ap_cont.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_flow_control_loop_pipe_no_ap_cont' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_flow_control_loop_pipe_no_ap_cont.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_regslice_both' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_regslice_both' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sobel_regslice_both__parameterized0' [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_regslice_both__parameterized0' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sobel' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Sobel_design_sobel_0_0' (0#1) [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_sobel_0_0/synth/Sobel_design_sobel_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element loop[8].divisor_tmp_reg[9] was removed.  [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:52]
+WARNING: [Synth 8-6014] Unused sequential element quot_reg was removed.  [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:122]
+WARNING: [Synth 8-7129] Port ap_loop_exit_done in module sobel_flow_control_loop_pipe_no_ap_cont is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sobel_urem_9ns_3ns_2_13_1_divider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sobel_line_buffer_3_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sobel_line_buffer_1_RAM_1WNR_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sobel_line_buffer_RAM_1WNR_AUTO_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1245.523 ; gain = 601.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1245.523 ; gain = 601.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1245.523 ; gain = 601.898
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1245.523 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1331.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 1331.062 ; gain = 0.023
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1331.062 ; gain = 687.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1331.062 ; gain = 687.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1331.062 ; gain = 687.438
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[8].remd_tmp_reg[9]' and it is trimmed from '9' to '2' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[8].dividend_tmp_reg[9]' and it is trimmed from '9' to '2' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[7].remd_tmp_reg[8]' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[6].remd_tmp_reg[7]' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[5].remd_tmp_reg[6]' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[4].remd_tmp_reg[5]' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[3].remd_tmp_reg[4]' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[2].remd_tmp_reg[3]' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[1].remd_tmp_reg[2]' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[0].remd_tmp_reg[1]' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel_urem_9ns_3ns_2_13_1.v:51]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel_regslice_both__parameterized0'
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter14_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1397]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter13_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1396]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter12_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1395]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter11_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1394]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter10_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1393]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter9_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1393]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter8_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1404]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter7_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1403]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter6_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1402]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter5_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1401]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter4_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1400]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter3_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter2_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1398]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_pp0_iter1_reg_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1425]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_1275_reg' and it is trimmed from '9' to '8' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1424]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_1_reg_1325_pp0_iter13_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1392]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_1_reg_1325_reg' and it is trimmed from '8' to '7' bits. [c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ipshared/36db/src/sobel.v:1391]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sobel_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sobel_regslice_both__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:42 . Memory (MB): peak = 1331.062 ; gain = 687.438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_out_stream_V_keep_V_U' (sobel_regslice_both__parameterized0) to 'inst/regslice_both_out_stream_V_strb_V_U'
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_out_stream_V_user_V_U' (sobel_regslice_both__parameterized0) to 'inst/regslice_both_out_stream_V_id_V_U'
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_out_stream_V_user_V_U' (sobel_regslice_both__parameterized0) to 'inst/regslice_both_out_stream_V_dest_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 1     
+	   4 Input   11 Bit       Adders := 1     
+	   3 Input   11 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 3     
+	   5 Input   11 Bit       Adders := 1     
+	   3 Input   10 Bit       Adders := 9     
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 2     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                9 Bit    Registers := 26    
+	                8 Bit    Registers := 86    
+	                7 Bit    Registers := 3     
+	                3 Bit    Registers := 11    
+	                2 Bit    Registers := 19    
+	                1 Bit    Registers := 109   
++---RAMs : 
+	               2K Bit	(256 X 8 bit)          RAMs := 3     
+	              688 Bit	(86 X 8 bit)          RAMs := 6     
++---Muxes : 
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 14    
+	   2 Input    8 Bit        Muxes := 13    
+	   4 Input    8 Bit        Muxes := 7     
+	   2 Input    7 Bit        Muxes := 12    
+	   2 Input    2 Bit        Muxes := 111   
+	   4 Input    2 Bit        Muxes := 44    
+	   2 Input    1 Bit        Muxes := 46    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP inst/mul_9ns_11ns_19_1_1_U2/tmp_product, operation Mode is: (A:0x2ab)*B''.
+DSP Report: register inst/mul_9ns_11ns_19_1_1_U2/tmp_product is absorbed into DSP inst/mul_9ns_11ns_19_1_1_U2/tmp_product.
+DSP Report: register inst/mul_9ns_11ns_19_1_1_U2/tmp_product is absorbed into DSP inst/mul_9ns_11ns_19_1_1_U2/tmp_product.
+DSP Report: operator inst/mul_9ns_11ns_19_1_1_U2/tmp_product is absorbed into DSP inst/mul_9ns_11ns_19_1_1_U2/tmp_product.
+DSP Report: Generating DSP inst/mul_8ns_10ns_17_1_1_U4/tmp_product, operation Mode is: (A:0x156)*B2.
+DSP Report: register inst/mul_8ns_10ns_17_1_1_U4/tmp_product is absorbed into DSP inst/mul_8ns_10ns_17_1_1_U4/tmp_product.
+DSP Report: operator inst/mul_8ns_10ns_17_1_1_U4/tmp_product is absorbed into DSP inst/mul_8ns_10ns_17_1_1_U4/tmp_product.
+DSP Report: Generating DSP inst/tmp_7_reg_1355_reg, operation Mode is: ((A:0x156)*B)'.
+DSP Report: register inst/tmp_7_reg_1355_reg is absorbed into DSP inst/tmp_7_reg_1355_reg.
+DSP Report: operator inst/mul_8ns_10ns_17_1_1_U3/tmp_product is absorbed into DSP inst/tmp_7_reg_1355_reg.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_in_stream_V_keep_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module Sobel_design_sobel_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_in_stream_V_keep_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module Sobel_design_sobel_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_in_stream_V_strb_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module Sobel_design_sobel_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_in_stream_V_strb_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module Sobel_design_sobel_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_in_stream_V_user_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module Sobel_design_sobel_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_in_stream_V_user_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module Sobel_design_sobel_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_in_stream_V_last_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module Sobel_design_sobel_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_in_stream_V_last_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module Sobel_design_sobel_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_in_stream_V_id_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module Sobel_design_sobel_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_in_stream_V_id_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module Sobel_design_sobel_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_in_stream_V_dest_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module Sobel_design_sobel_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_in_stream_V_dest_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module Sobel_design_sobel_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_out_stream_V_user_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module Sobel_design_sobel_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/regslice_both_out_stream_V_user_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module Sobel_design_sobel_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 1331.062 ; gain = 687.438
+---------------------------------------------------------------------------------
+ Sort Area is  inst/mul_9ns_11ns_19_1_1_U2/tmp_product_0 : 0 0 : 359 359 : Used 1 time 0
+ Sort Area is  inst/tmp_7_reg_1355_reg_4 : 0 0 : 318 318 : Used 1 time 0
+ Sort Area is  inst/mul_8ns_10ns_17_1_1_U4/tmp_product_2 : 0 0 : 310 310 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-----------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name            | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Sobel_design_sobel_0_0 | inst/line_buffer_U/ram0_reg      | 86 x 8(READ_FIRST)     | W | R | 86 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_1_17_U/ram0_reg | 86 x 8(READ_FIRST)     | W | R | 86 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_2_U/ram0_reg    | 86 x 8(READ_FIRST)     | W | R | 86 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_1_U/ram0_reg    | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_1_U/ram1_reg    | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_1_U/ram2_reg    | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_3_U/ram_reg     | 86 x 8(READ_FIRST)     | W |   | 86 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_4_U/ram_reg     | 86 x 8(READ_FIRST)     | W |   | 86 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_5_U/ram_reg     | 86 x 8(READ_FIRST)     | W |   | 86 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
++-----------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name            | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Sobel_design_sobel_0_0 | (A:0x2ab)*B''  | 10     | 11     | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|Sobel_design_sobel_0_0 | (A:0x156)*B2   | 9      | 10     | -      | -      | 19     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Sobel_design_sobel_0_0 | ((A:0x156)*B)' | 9      | 10     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 1482.309 ; gain = 838.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 1483.281 ; gain = 839.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-----------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name            | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Sobel_design_sobel_0_0 | inst/line_buffer_U/ram0_reg      | 86 x 8(READ_FIRST)     | W | R | 86 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_1_17_U/ram0_reg | 86 x 8(READ_FIRST)     | W | R | 86 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_2_U/ram0_reg    | 86 x 8(READ_FIRST)     | W | R | 86 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_1_U/ram0_reg    | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_1_U/ram1_reg    | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_1_U/ram2_reg    | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_3_U/ram_reg     | 86 x 8(READ_FIRST)     | W |   | 86 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_4_U/ram_reg     | 86 x 8(READ_FIRST)     | W |   | 86 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_5_U/ram_reg     | 86 x 8(READ_FIRST)     | W |   | 86 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
++-----------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_1_17_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_2_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_1_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 1511.902 ; gain = 868.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1711.617 ; gain = 1067.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1711.617 ; gain = 1067.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1711.617 ; gain = 1067.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1711.617 ; gain = 1067.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1712.574 ; gain = 1068.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1712.574 ; gain = 1068.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name            | RTL Name                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Sobel_design_sobel_0_0 | inst/pix_out_last_reg_1360_pp0_iter17_reg_reg[0]       | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/and_ln35_reg_1305_pp0_iter12_reg_reg[0]           | 13     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/and_ln35_reg_1305_pp0_iter17_reg_reg[0]           | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/tmp_4_reg_1295_pp0_iter11_reg_reg[0]              | 12     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/line_buffer_1_load_reg_1318_pp0_iter11_reg_reg[7] | 10     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|Sobel_design_sobel_0_0 | inst/select_ln21_reg_1268_pp0_iter2_reg_reg[8]         | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|Sobel_design_sobel_0_0 | inst/select_ln21_reg_1268_pp0_iter9_reg_reg[8]         | 7      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|Sobel_design_sobel_0_0 | inst/select_ln21_reg_1268_pp0_iter9_reg_reg[0]         | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/select_ln21_reg_1268_pp0_iter8_reg_reg[1]         | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/select_ln21_reg_1268_pp0_iter7_reg_reg[2]         | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/select_ln21_reg_1268_pp0_iter6_reg_reg[3]         | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/select_ln21_reg_1268_pp0_iter9_reg_reg[3]         | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/select_ln21_reg_1268_pp0_iter5_reg_reg[4]         | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/select_ln21_reg_1268_pp0_iter9_reg_reg[4]         | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/select_ln21_reg_1268_pp0_iter4_reg_reg[5]         | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/select_ln21_reg_1268_pp0_iter9_reg_reg[5]         | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/select_ln21_reg_1268_pp0_iter3_reg_reg[6]         | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Sobel_design_sobel_0_0 | inst/select_ln21_reg_1268_pp0_iter9_reg_reg[6]         | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-----------------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-----------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name            | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Sobel_design_sobel_0_0 | (A*B)'      | 8      | 9      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|Sobel_design_sobel_0_0 | A'*B        | 8      | 9      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Sobel_design_sobel_0_0 | A''*B       | 9      | 10     | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    46|
+|2     |DSP48E1  |     3|
+|5     |LUT1     |    32|
+|6     |LUT2     |    48|
+|7     |LUT3     |    84|
+|8     |LUT4     |    81|
+|9     |LUT5     |   116|
+|10    |LUT6     |   137|
+|11    |RAMB18E1 |     9|
+|13    |SRL16E   |    27|
+|14    |FDRE     |   401|
+|15    |FDSE     |     6|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1712.574 ; gain = 1068.949
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:01:06 . Memory (MB): peak = 1712.574 ; gain = 983.410
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 1712.574 ; gain = 1068.949
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1712.574 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1712.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: bbc8f897
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:29 . Memory (MB): peak = 1712.574 ; gain = 1297.434
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1712.574 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/office/Desktop/X_MEN_SOBEL/Sobel_Bd_X-Men/Sobel_Bd_X-Men.runs/Sobel_design_sobel_0_0_synth_1/Sobel_design_sobel_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Sobel_design_sobel_0_0, cache-ID = fc623edd07fda1cb
+INFO: [Coretcl 2-1174] Renamed 17 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1712.574 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/office/Desktop/X_MEN_SOBEL/Sobel_Bd_X-Men/Sobel_Bd_X-Men.runs/Sobel_design_sobel_0_0_synth_1/Sobel_design_sobel_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Sobel_design_sobel_0_0_utilization_synth.rpt -pb Sobel_design_sobel_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  1 21:59:34 2025...

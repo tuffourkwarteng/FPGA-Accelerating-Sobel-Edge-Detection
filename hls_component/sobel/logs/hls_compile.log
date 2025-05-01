@@ -1,0 +1,115 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/office/Desktop/Sobel_Accelerator/Sobel.cpp' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/office/Desktop/Sobel_Accelerator/Sobel.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=sobel' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(9)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=1.25ns' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(10)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=xo' from C:/Users/office/Desktop/Sobel_Accelerator/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 3.924 seconds; current allocated memory: 162.398 MB.
+INFO: [HLS 200-10] Analyzing design file '../Sobel.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.398 seconds; current allocated memory: 165.547 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 460 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 237 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 183 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 175 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 175 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 203 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 181 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 181 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 181 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 208 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 210 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 208 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 310 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 275 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 255 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 259 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/office/Desktop/Sobel_Accelerator/hls_component/sobel/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_37_3' is marked as complete unroll implied by the pipeline pragma (../Sobel.cpp:37:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_38_4' is marked as complete unroll implied by the pipeline pragma (../Sobel.cpp:38:38)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_37_3' (../Sobel.cpp:37:34) in function 'sobel' completely with a factor of 3 (../Sobel.cpp:10:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_38_4' (../Sobel.cpp:38:38) in function 'sobel' completely with a factor of 3 (../Sobel.cpp:10:0)
+INFO: [HLS 214-248] Applying array_partition to 'line_buffer': Complete partitioning on dimension 1. (../Sobel.cpp:18:16)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'line_buffer_0' due to pipeline pragma (../Sobel.cpp:23:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'line_buffer_2' due to pipeline pragma (../Sobel.cpp:23:9)
+INFO: [HLS 214-248] Applying array_partition to 'line_buffer_0': Cyclic partitioning with factor 3 on dimension 1. (../Sobel.cpp:18:16)
+INFO: [HLS 214-248] Applying array_partition to 'line_buffer_2': Cyclic partitioning with factor 3 on dimension 1. (../Sobel.cpp:18:16)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.466 seconds; current allocated memory: 167.391 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 167.391 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.187 seconds; current allocated memory: 172.137 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 173.652 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../Sobel.cpp:60:13) in function 'sobel'... converting 7 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.15 seconds; current allocated memory: 195.652 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_21_1'(../Sobel.cpp:21:19) and 'VITIS_LOOP_22_2'(../Sobel.cpp:22:26) in function 'sobel' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_21_1' (../Sobel.cpp:21:19) in function 'sobel'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.188 seconds; current allocated memory: 195.656 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sobel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_1'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_2'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_1_17'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_21_1_VITIS_LOOP_22_2'.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 20, loop 'VITIS_LOOP_21_1_VITIS_LOOP_22_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.003 seconds; current allocated memory: 195.656 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.198 seconds; current allocated memory: 195.656 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/in_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/in_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/in_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/in_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/in_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/in_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/in_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/out_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/out_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/out_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/out_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/out_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/out_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/out_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'sobel' to 'ap_ctrl_none'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sobel' pipeline 'VITIS_LOOP_21_1_VITIS_LOOP_22_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_10ns_17_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_11ns_19_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_8_1_1': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_9ns_3ns_2_13_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sobel'.
+INFO: [RTMG 210-278] Implementing memory 'sobel_line_buffer_RAM_1WNR_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-2167] Implementing memory 'sobel_line_buffer_1_RAM_1WNR_AUTO_1R1W' using auto RAMs with 3 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [RTMG 210-278] Implementing memory 'sobel_line_buffer_3_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.252 seconds; current allocated memory: 200.090 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.578 seconds; current allocated memory: 206.680 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.977 seconds; current allocated memory: 209.309 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sobel.
+INFO: [VLOG 209-307] Generating Verilog RTL for sobel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 117.48 MHz
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 3 seconds. Total elapsed time: 29.611 seconds; peak allocated memory: 209.508 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 35s

@@ -1,0 +1,61 @@
+{
+	"version": "1.0",
+	"modules": {
+		"Sobel_design": {
+			"proto_instances": {
+				"/axi_dma_0/M_AXIS_MM2S": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "m_axi_mm2s_aclk"},
+						"ARESETN": { "actual": "mm2s_prmry_reset_out_n"},
+						"TDATA": { "actual": "m_axis_mm2s_tdata[7:0]"},
+						"TKEEP": { "actual": "m_axis_mm2s_tkeep[0:0]"},
+						"TLAST": { "actual": "m_axis_mm2s_tlast"},
+						"TREADY": { "actual": "m_axis_mm2s_tready"},
+						"TVALID": { "actual": "m_axis_mm2s_tvalid"}
+					}
+				},
+				"/axi_dma_0/S_AXIS_S2MM": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "m_axi_s2mm_aclk"},
+						"ARESETN": { "actual": "s2mm_prmry_reset_out_n"},
+						"TDATA": { "actual": "s_axis_s2mm_tdata[7:0]"},
+						"TKEEP": { "actual": "s_axis_s2mm_tkeep[0:0]"},
+						"TLAST": { "actual": "s_axis_s2mm_tlast"},
+						"TREADY": { "actual": "s_axis_s2mm_tready"},
+						"TVALID": { "actual": "s_axis_s2mm_tvalid"}
+					}
+				},
+				"/sobel_0/in_stream": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"TDATA": { "actual": "in_stream_TDATA[7:0]"},
+						"TDEST": { "actual": "in_stream_TDEST[0:0]"},
+						"TID": { "actual": "in_stream_TID[0:0]"},
+						"TKEEP": { "actual": "in_stream_TKEEP[0:0]"},
+						"TLAST": { "actual": "in_stream_TLAST[0:0]"},
+						"TREADY": { "actual": "in_stream_TREADY"},
+						"TSTRB": { "actual": "in_stream_TSTRB[0:0]"},
+						"TUSER": { "actual": "in_stream_TUSER[0:0]"},
+						"TVALID": { "actual": "in_stream_TVALID"}
+					}
+				},
+				"/sobel_0/out_stream": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"TDATA": { "actual": "out_stream_TDATA[7:0]"},
+						"TDEST": { "actual": "out_stream_TDEST[0:0]"},
+						"TID": { "actual": "out_stream_TID[0:0]"},
+						"TKEEP": { "actual": "out_stream_TKEEP[0:0]"},
+						"TLAST": { "actual": "out_stream_TLAST[0:0]"},
+						"TREADY": { "actual": "out_stream_TREADY"},
+						"TSTRB": { "actual": "out_stream_TSTRB[0:0]"},
+						"TUSER": { "actual": "out_stream_TUSER[0:0]"},
+						"TVALID": { "actual": "out_stream_TVALID"}
+					}
+				}
+			}
+		}
+	}
+}

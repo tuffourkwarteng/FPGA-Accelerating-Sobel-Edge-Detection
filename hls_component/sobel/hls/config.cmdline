@@ -1,0 +1,3 @@
+relativeroot=C:/Users/office/Desktop/Sobel_Accelerator/hls_component
+original_argv=-c --mode hls --config C:\Users\office\Desktop\Sobel_Accelerator\hls_component\hls_config.cfg --work_dir sobel 
+

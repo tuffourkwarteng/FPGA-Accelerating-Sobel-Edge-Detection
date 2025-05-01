@@ -1,0 +1,15 @@
+[
+  {
+    "directory": "C:\\Users\\office\\Desktop\\Sobel_Accelerator\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=sobel",
+      "-c",
+      "C:/Users/office/Desktop/Sobel_Accelerator/Sobel.cpp"
+    ],
+    "file": "C:/Users/office/Desktop/Sobel_Accelerator/Sobel.cpp"
+  }
+]

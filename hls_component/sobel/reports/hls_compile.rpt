@@ -1,0 +1,169 @@
+
+
+================================================================
+== Synthesis Summary Report of 'sobel'
+================================================================
++ General Information: 
+    * Date:           Thu May  1 02:11:12 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        sobel
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+--------+---------+-----------+-----------+-----+
+    |               Modules              | Issue|      | Latency |  Latency  | Iteration|         |  Trip |          |        |         |           |           |     |
+    |               & Loops              | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|  BRAM  |   DSP   |     FF    |    LUT    | URAM|
+    +------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+--------+---------+-----------+-----------+-----+
+    |+ sobel                             |    II|  0.24|    66069|  6.607e+05|         -|    66049|      -|    rewind|  3 (1%)|  1 (~0%)|  1456 (1%)|  1581 (2%)|    -|
+    | o VITIS_LOOP_21_1_VITIS_LOOP_22_2  |     -|  8.75|    66067|  6.607e+05|        20|        1|  66049|       yes|       -|        -|          -|          -|    -|
+    +------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+--------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface  | Direction | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| in_stream  | in        | both          | 8     | 1     | 1   | 1     | 1     | 1      | 1     | 1     | 1      |
+| out_stream | out       | both          | 8     | 1     | 1   | 1     | 1     | 1      | 1     | 1     | 1      |
++------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+--------------------------------------------------------+
+| Argument   | Direction | Datatype                                               |
++------------+-----------+--------------------------------------------------------+
+| in_stream  | in        | stream<hls::axis<ap_uint<8>, 1, 1, 1, '8', false>, 0>& |
+| out_stream | out       | stream<hls::axis<ap_uint<8>, 1, 1, 1, '8', false>, 0>& |
++------------+-----------+--------------------------------------------------------+
+
+* SW-to-HW Mapping
++------------+--------------+-----------+
+| Argument   | HW Interface | HW Type   |
++------------+--------------+-----------+
+| in_stream  | in_stream    | interface |
+| out_stream | out_stream   | interface |
++------------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------+-----+--------+--------------+-----------+------------------------+---------+
+| Name                            | DSP | Pragma | Variable     | Op        | Impl                   | Latency |
++---------------------------------+-----+--------+--------------+-----------+------------------------+---------+
+| + sobel                         | 1   |        |              |           |                        |         |
+|   select_ln21_fu_561_p3         |     |        | select_ln21  | select    | auto_sel               | 0       |
+|   row_2_fu_569_p3               |     |        | row_2        | select    | auto_sel               | 0       |
+|   icmp14_fu_587_p2              |     |        | icmp14       | setne     | auto                   | 0       |
+|   mul_9ns_11ns_19_1_1_U2        | 1   |        | mul_ln22     | mul       | auto                   | 0       |
+|   urem_9ns_3ns_2_13_1_U1        |     |        | urem_ln22    | urem      | auto                   | 12      |
+|   or_ln27_fu_616_p2             |     |        | or_ln27      | or        | auto                   | 0       |
+|   add_ln21_fu_630_p2            |     |        | add_ln21     | add       | fabric                 | 0       |
+|   sparsemux_7_2_8_1_1_U5        |     |        | tmp          | sparsemux | onehotencoding_realdef | 0       |
+|   icmp_ln35_fu_646_p2           |     |        | icmp_ln35    | setne     | auto                   | 0       |
+|   and_ln35_fu_652_p2            |     |        | and_ln35     | and       | auto                   | 0       |
+|   add_ln41_fu_732_p2            |     |        | add_ln41     | add       | fabric                 | 0       |
+|   mul_8ns_10ns_17_1_1_U4        |     |        | mul_ln41     | mul       | auto                   | 0       |
+|   sparsemux_7_2_8_1_1_U6        |     |        | px           | sparsemux | onehotencoding_realdef | 0       |
+|   add_ln41_1_fu_737_p2          |     |        | add_ln41_1   | add       | fabric                 | 0       |
+|   mul_8ns_10ns_17_1_1_U3        |     |        | mul_ln41_1   | mul       | auto                   | 0       |
+|   sparsemux_7_2_8_1_1_U7        |     |        | px_1         | sparsemux | onehotencoding_realdef | 0       |
+|   sub_ln43_fu_894_p2            |     |        | sub_ln43     | sub       | fabric                 | 0       |
+|   gy_fu_904_p2                  |     |        | gy           | sub       | fabric                 | 0       |
+|   sparsemux_7_2_8_1_1_U8        |     |        | px_2         | sparsemux | onehotencoding_realdef | 0       |
+|   gy_1_fu_930_p2                |     |        | gy_1         | sub       | fabric                 | 0       |
+|   gy_2_fu_936_p3                |     |        | gy_2         | select    | auto_sel               | 0       |
+|   conv_2218_pn_fu_943_p3        |     |        | conv_2218_pn | select    | auto_sel               | 0       |
+|   gx_fu_954_p2                  |     |        | gx           | sub       | fabric                 | 0       |
+|   sub_ln42_fu_975_p2            |     |        | sub_ln42     | sub       | fabric                 | 0       |
+|   gx_1_fu_985_p2                |     |        | gx_1         | add       | fabric                 | 0       |
+|   gx_2_fu_1003_p2               |     |        | gx_2         | add       | fabric                 | 0       |
+|   gx_3_fu_1009_p3               |     |        | gx_3         | select    | auto_sel               | 0       |
+|   sparsemux_7_2_8_1_1_U9        |     |        | px_5         | sparsemux | onehotencoding_realdef | 0       |
+|   gx_4_fu_1043_p2               |     |        | gx_4         | sub       | fabric                 | 0       |
+|   sparsemux_7_2_8_1_1_U10       |     |        | px_6         | sparsemux | onehotencoding_realdef | 0       |
+|   add_ln43_fu_1080_p2           |     |        | add_ln43     | add       | fabric                 | 0       |
+|   gy_3_fu_1090_p2               |     |        | gy_3         | add       | fabric                 | 0       |
+|   sparsemux_7_2_8_1_1_U11       |     |        | px_7         | sparsemux | onehotencoding_realdef | 0       |
+|   gx_5_fu_1119_p2               |     |        | gx_5         | add       | fabric                 | 0       |
+|   gy_4_fu_1124_p2               |     |        | gy_4         | add       | fabric                 | 0       |
+|   gy_5_fu_1129_p3               |     |        | gy_5         | select    | auto_sel               | 0       |
+|   gx_6_fu_1139_p3               |     |        | gx_6         | select    | auto_sel               | 0       |
+|   neg_fu_1149_p2                |     |        | neg          | sub       | fabric                 | 0       |
+|   abscond_fu_1155_p2            |     |        | abscond      | setgt     | auto                   | 0       |
+|   abs_fu_1161_p3                |     |        | abs          | select    | auto_sel               | 0       |
+|   neg1_fu_1177_p2               |     |        | neg1         | sub       | fabric                 | 0       |
+|   abscond2_fu_1183_p2           |     |        | abscond2     | setgt     | auto                   | 0       |
+|   abs3_fu_1189_p3               |     |        | abs3         | select    | auto_sel               | 0       |
+|   add_ln52_fu_1205_p2           |     |        | add_ln52     | add       | fabric                 | 0       |
+|   mag_fu_1211_p2                |     |        | mag          | add       | fabric                 | 0       |
+|   icmp_ln50_fu_1227_p2          |     |        | icmp_ln50    | setne     | auto                   | 0       |
+|   out_stream_TDATA_int_regslice |     |        | pix_out_data | select    | auto_sel               | 0       |
+|   pix_out_last_fu_762_p2        |     |        | pix_out_last | seteq     | auto                   | 0       |
+|   col_fu_658_p2                 |     |        | col          | add       | fabric                 | 0       |
+|   icmp_ln22_fu_664_p2           |     |        | icmp_ln22    | seteq     | auto                   | 0       |
+|   row_fu_670_p2                 |     |        | row          | add       | fabric                 | 0       |
+|   icmp_ln21_fu_676_p2           |     |        | icmp_ln21    | seteq     | auto                   | 0       |
++---------------------------------+-----+--------+--------------+-----------+------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++----------------------+---------------+------+------+------+--------+------------------+------+---------+------------------+
+| Name                 | Usage         | Type | BRAM | URAM | Pragma | Variable         | Impl | Latency | Bitwidth, Depth, |
+|                      |               |      |      |      |        |                  |      |         | Banks            |
++----------------------+---------------+------+------+------+--------+------------------+------+---------+------------------+
+| + sobel              |               |      | 3    | 0    |        |                  |      |         |                  |
+|   line_buffer_U      | rom_np array  |      |      |      |        | line_buffer      | auto | 1       | 8, 86, 1         |
+|   line_buffer_1_17_U | rom_np array  |      |      |      |        | line_buffer_1_17 | auto | 1       | 8, 86, 1         |
+|   line_buffer_2_U    | rom_np array  |      |      |      |        | line_buffer_2    | auto | 1       | 8, 86, 1         |
+|   line_buffer_1_U    | rom_np array  |      | 3    |      |        | line_buffer_1    | auto | 1       | 8, 256, 1        |
+|   line_buffer_3_U    | ram_s2p array |      |      |      |        | line_buffer_3    | auto | 1       | 8, 86, 1         |
+|   line_buffer_4_U    | ram_s2p array |      |      |      |        | line_buffer_4    | auto | 1       | 8, 86, 1         |
+|   line_buffer_5_U    | ram_s2p array |      |      |      |        | line_buffer_5    | auto | 1       | 8, 86, 1         |
++----------------------+---------------+------+------+------+--------+------------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-------------------------------------+---------------------------------------+
+| Type            | Options                             | Location                              |
++-----------------+-------------------------------------+---------------------------------------+
+| interface       | axis port=in_stream                 | ../Sobel.cpp:11 in sobel, in_stream   |
+| interface       | axis port=out_stream                | ../Sobel.cpp:12 in sobel, out_stream  |
+| interface       | ap_ctrl_none port=return            | ../Sobel.cpp:13 in sobel, return      |
+| array_partition | variable=line_buffer complete dim=1 | ../Sobel.cpp:19 in sobel, line_buffer |
+| pipeline        | II=1                                | ../Sobel.cpp:23 in sobel              |
++-----------------+-------------------------------------+---------------------------------------+
+
+* Inferred Pragmas
++---------------------------+-----------------+---------------------------------------------------+-------------------------------------------------+
+| Source                    | Inferred Pragma | Options                                           | Location                                        |
++---------------------------+-----------------+---------------------------------------------------+-------------------------------------------------+
+| pipeline  ../Sobel.cpp:23 | array_partition | dim=1 type=cyclic factor=3 variable=line_buffer_0 | variable line_buffer_0 in sobel ../Sobel.cpp:18 |
++---------------------------+-----------------+---------------------------------------------------+-------------------------------------------------+
+
+
