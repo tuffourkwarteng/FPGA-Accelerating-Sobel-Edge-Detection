@@ -85,6 +85,17 @@ set_property used_in_implementation false [get_files -all c:/Users/office/Deskto
 set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_proc_sys_reset_0_0/Sobel_design_proc_sys_reset_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_proc_sys_reset_0_0/Sobel_design_proc_sys_reset_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_proc_sys_reset_0_0/Sobel_design_proc_sys_reset_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_axi_smc_0/bd_0/ip/ip_1/bd_b9ad_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_axi_smc_0/bd_0/ip/ip_1/bd_b9ad_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_axi_smc_0/bd_0/ip/ip_5/bd_b9ad_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_axi_smc_0/bd_0/ip/ip_6/bd_b9ad_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_axi_smc_0/bd_0/ip/ip_7/bd_b9ad_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_axi_smc_0/bd_0/ip/ip_8/bd_b9ad_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_axi_smc_0/bd_0/ip/ip_9/bd_b9ad_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_axi_smc_0/bd_0/ip/ip_10/bd_b9ad_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_axi_smc_0/bd_0/ip/ip_11/bd_b9ad_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_axi_smc_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_axi_smc_0/smartconnect.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/Sobel_design_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -99,6 +110,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/office/Desktop/X_MEN_SOBEL/Sobel_Bd_X-Men/Sobel_Bd_X-Men.srcs/utils_1/imports/synth_1/Sobel_design_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

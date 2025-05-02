@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1746129733">
-  <File Type="ROUTE-PWR" Name="Sobel_design_wrapper_power_routed.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1746148758">
   <File Type="PA-TCL" Name="Sobel_design_wrapper.tcl"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Sobel_design_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Sobel_design_wrapper_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="Sobel_design_wrapper_power_summary_routed.pb"/>
-  <File Type="OPT-RQA-PB" Name="Sobel_design_wrapper_rqa_opted.pb"/>
   <File Type="REPORTS-TCL" Name="Sobel_design_wrapper_reports.tcl"/>
-  <File Type="OPT-TIMING" Name="Sobel_design_wrapper_timing_summary_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Sobel_design_wrapper_timing_summary_init.rpt"/>
   <File Type="OPT-DCP" Name="Sobel_design_wrapper_opt.dcp"/>
   <File Type="OPT-DRC" Name="Sobel_design_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Sobel_design_wrapper_methodology_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Sobel_design_wrapper.hwdef"/>
+  <File Type="OPT-TIMING" Name="Sobel_design_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="Sobel_design_wrapper_rqa_opted.pb"/>
   <File Type="PWROPT-DCP" Name="Sobel_design_wrapper_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="Sobel_design_wrapper_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="Sobel_design_wrapper_timing_summary_pwropted.rpt"/>
@@ -22,16 +20,12 @@
   <File Type="PLACE-CTRL" Name="Sobel_design_wrapper_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="Sobel_design_wrapper_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Sobel_design_wrapper_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="Sobel_design_wrapper.bin"/>
   <File Type="PLACE-TIMING" Name="Sobel_design_wrapper_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="Sobel_design_wrapper_power_routed.rpx"/>
   <File Type="PLACE-RQA-PB" Name="Sobel_design_wrapper_rqa_placed.pb"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="Sobel_design_wrapper_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="Sobel_design_wrapper.msk"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="Sobel_design_wrapper_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="Sobel_design_wrapper_physopt.dcp"/>
   <File Type="PHYSOPT-DRC" Name="Sobel_design_wrapper_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="Sobel_design_wrapper.rbt"/>
   <File Type="PHYSOPT-TIMING" Name="Sobel_design_wrapper_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="Sobel_design_wrapper_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="Sobel_design_wrapper_routed.dcp"/>
@@ -42,7 +36,9 @@
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Sobel_design_wrapper_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Sobel_design_wrapper_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Sobel_design_wrapper_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="Sobel_design_wrapper_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Sobel_design_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Sobel_design_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Sobel_design_wrapper_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Sobel_design_wrapper_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Sobel_design_wrapper_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Sobel_design_wrapper_timing_summary_routed.rpt"/>
@@ -53,15 +49,19 @@
   <File Type="ROUTE-BUS-SKEW" Name="Sobel_design_wrapper_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Sobel_design_wrapper_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Sobel_design_wrapper_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="Sobel_design_wrapper_rqs_routed.pb"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Sobel_design_wrapper_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Sobel_design_wrapper_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Sobel_design_wrapper_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Sobel_design_wrapper_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Sobel_design_wrapper_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Sobel_design_wrapper_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="Sobel_design_wrapper.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Sobel_design_wrapper_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Sobel_design_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="Sobel_design_wrapper.bit"/>
+  <File Type="BG-BIN" Name="Sobel_design_wrapper.bin"/>
+  <File Type="BITSTR-MSK" Name="Sobel_design_wrapper.msk"/>
+  <File Type="BITSTR-RBT" Name="Sobel_design_wrapper.rbt"/>
   <File Type="BITSTR-NKY" Name="Sobel_design_wrapper.nky"/>
   <File Type="BITSTR-BMM" Name="Sobel_design_wrapper_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="Sobel_design_wrapper.mmi"/>
@@ -114,6 +114,14 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Sobel_design_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
@@ -134,6 +142,7 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="Sobel_design_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Sobel_design_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Sobel_design_axi_smc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Sobel_design_axi_dma_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Sobel_design_sobel_0_0"/>
 </GenRun>

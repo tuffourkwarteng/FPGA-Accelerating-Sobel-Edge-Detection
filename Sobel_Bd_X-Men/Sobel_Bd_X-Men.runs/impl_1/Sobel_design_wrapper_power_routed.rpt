@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Thu May  1 22:05:36 2025
+| Date             : Fri May  2 03:21:35 2025
 | Host             : DESKTOP-PREBUPB running 64-bit major release  (build 9200)
 | Command          : report_power -file Sobel_design_wrapper_power_routed.rpt -pb Sobel_design_wrapper_power_summary_routed.pb -rpx Sobel_design_wrapper_power_routed.rpx
 | Design           : Sobel_design_wrapper
@@ -30,15 +30,15 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.661        |
+| Total On-Chip Power (W)  | 1.670        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.525        |
-| Device Static (W)        | 0.136        |
+| Dynamic (W)              | 1.534        |
+| Device Static (W)        | 0.137        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 65.8         |
-| Junction Temperature (C) | 44.2         |
-| Confidence Level         | High         |
+| Max Ambient (C)          | 65.7         |
+| Junction Temperature (C) | 44.3         |
+| Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
 | Design Nets Matched      | NA           |
@@ -49,17 +49,24 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+--------------+-----------+----------+-----------+-----------------+
-| On-Chip      | Power (W) | Used     | Available | Utilization (%) |
-+--------------+-----------+----------+-----------+-----------------+
-| Clocks       |    <0.001 |        3 |       --- |             --- |
-| Slice Logic  |     0.000 |      133 |       --- |             --- |
-|   Others     |     0.000 |      133 |       --- |             --- |
-| Signals      |     0.000 |        0 |       --- |             --- |
-| PS7          |     1.525 |        1 |       --- |             --- |
-| Static Power |     0.136 |          |           |                 |
-| Total        |     1.661 |          |           |                 |
-+--------------+-----------+----------+-----------+-----------------+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.006 |        3 |       --- |             --- |
+| Slice Logic              |     0.001 |     5963 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |     2090 |     53200 |            3.93 |
+|   CARRY4                 |    <0.001 |       70 |     13300 |            0.53 |
+|   Register               |    <0.001 |     2683 |    106400 |            2.52 |
+|   LUT as Shift Register  |    <0.001 |       63 |     17400 |            0.36 |
+|   Others                 |     0.000 |      494 |       --- |             --- |
+|   LUT as Distributed RAM |     0.000 |        8 |     17400 |            0.05 |
+| Signals                  |     0.001 |     4356 |       --- |             --- |
+| Block RAM                |    <0.001 |      6.5 |       140 |            4.64 |
+| DSPs                     |    <0.001 |        3 |       220 |            1.36 |
+| PS7                      |     1.525 |        1 |       --- |             --- |
+| Static Power             |     0.137 |          |           |                 |
+| Total                    |     1.670 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -68,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.015 |       0.000 |      0.015 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.024 |       0.008 |      0.015 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -94,17 +101,17 @@ Table of Contents
 1.3 Confidence Level
 --------------------
 
-+-----------------------------+------------+------------------------------------------------+--------+
-| User Input Data             | Confidence | Details                                        | Action |
-+-----------------------------+------------+------------------------------------------------+--------+
-| Design implementation state | High       | Design is routed                               |        |
-| Clock nodes activity        | High       | User specified more than 95% of clocks         |        |
-| I/O nodes activity          | High       | User specified more than 95% of inputs         |        |
-| Internal nodes activity     | High       | User specified more than 25% of internal nodes |        |
-| Device models               | High       | Device models are Production                   |        |
-|                             |            |                                                |        |
-| Overall confidence level    | High       |                                                |        |
-+-----------------------------+------------+------------------------------------------------+--------+
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                        | Action                                                                                                     |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                               |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks         |                                                                                                            |
+| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                            |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                   |                                                                                                            |
+|                             |            |                                                |                                                                                                            |
+| Overall confidence level    | Medium     |                                                |                                                                                                            |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 
 
 2. Settings
@@ -144,10 +151,16 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| Sobel_design_wrapper     |     1.525 |
-|   Sobel_design_i         |     1.525 |
+| Sobel_design_wrapper     |     1.534 |
+|   Sobel_design_i         |     1.534 |
+|     axi_dma_0            |     0.004 |
+|       U0                 |     0.004 |
+|     axi_smc              |     0.002 |
+|       inst               |     0.002 |
 |     processing_system7_0 |     1.525 |
 |       inst               |     1.525 |
+|     sobel_0              |     0.002 |
+|       inst               |     0.002 |
 +--------------------------+-----------+
 
 

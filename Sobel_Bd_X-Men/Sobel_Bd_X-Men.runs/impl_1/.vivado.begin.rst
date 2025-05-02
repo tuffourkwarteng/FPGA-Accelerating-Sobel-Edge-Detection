@@ -8,3 +8,33 @@
     <Process Command="vivado.bat" Owner="office" Host="DESKTOP-PREBUPB" Pid="6120" HostCore="8" HostMemory="016888762368">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="office" Host="DESKTOP-PREBUPB" Pid="12116" HostCore="8" HostMemory="016888762368">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="office" Host="DESKTOP-PREBUPB" Pid="77652" HostCore="8" HostMemory="016888762368">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="office" Host="DESKTOP-PREBUPB" Pid="57336" HostCore="8" HostMemory="016888762368">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="office" Host="DESKTOP-PREBUPB" Pid="25604" HostCore="8" HostMemory="016888762368">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="office" Host="DESKTOP-PREBUPB" Pid="92620" HostCore="8" HostMemory="016888762368">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="office" Host="DESKTOP-PREBUPB" Pid="55164" HostCore="8" HostMemory="016888762368">
+    </Process>
+</ProcessHandle>

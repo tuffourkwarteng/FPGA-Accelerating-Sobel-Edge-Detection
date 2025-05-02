@@ -16,4 +16,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Sobel_desig
 # IP: c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_proc_sys_reset_0_0/Sobel_design_proc_sys_reset_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Sobel_design_proc_sys_reset_0_0 || ORIG_REF_NAME==Sobel_design_proc_sys_reset_0_0} -quiet] -quiet
 
+# IP: c:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/ip/Sobel_design_axi_smc_0/Sobel_design_axi_smc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Sobel_design_axi_smc_0 || ORIG_REF_NAME==Sobel_design_axi_smc_0} -quiet] -quiet
+
 # XDC: C:/Users/office/Desktop/X_MEN_SOBEL/Sobel_design/Sobel_design_ooc.xdc
